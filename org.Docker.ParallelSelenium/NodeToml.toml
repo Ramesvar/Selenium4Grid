@@ -1,0 +1,9 @@
+[node]
+detect-drivers = false
+grid-url = "http://192.168.0.10:4449"
+[[node.driver-configuration]]
+override-max-sessions = true
+max-sessions = 2
+display-name = "Firefox Nightly"
+stereotype = "{\"browserName\": \"firefox\"}"
+
