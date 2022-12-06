@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="org.Docker.ParallelSelenium.org.Docker.ParallelSelenium.BaseClass">
+      <class name="org.Docker.ParallelSelenium.org.Docker.ParallelSelenium.BaseClass2">
         <methods>
           <include name="initDriver"/>
         </methods>
-      </class> <!-- org.Docker.ParallelSelenium.org.Docker.ParallelSelenium.BaseClass -->
+      </class> <!-- org.Docker.ParallelSelenium.org.Docker.ParallelSelenium.BaseClass2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
