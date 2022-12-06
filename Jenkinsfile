@@ -7,6 +7,13 @@ pipeline {
       }
     }
 
+    stage('Docker start') {
+      steps {
+        bat 'docker-compose start'
+         bat 'docker-compose up'
+      }
+    }
+
     stage('Maven Build 0') {
       steps {
         bat 'mvn clean'
@@ -16,6 +23,12 @@ pipeline {
     stage('Maven Build 1') {
       steps {
         bat 'mvn test'
+      }
+    }
+    stage('Docker end') {
+      steps {
+               bat 'docker-compose down'
+         bat 'docker-compose stop'
       }
     }
 
