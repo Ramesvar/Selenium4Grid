@@ -1,5 +1,5 @@
 pipeline {
-  agent LocalNode
+  agent {LocalNode}
   stages {
     stage('Checkout Scm') {
       steps {
