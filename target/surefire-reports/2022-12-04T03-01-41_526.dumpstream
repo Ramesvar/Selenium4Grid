@@ -1,0 +1,5 @@
+# Created at 2022-12-04T03:01:42.163
+Boot Manifest-JAR contains absolute paths in classpath 'D:\Ramesh\Selenium\SeleniumWS\org.Docker.ParallelSelenium\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+'other' has different root
+
