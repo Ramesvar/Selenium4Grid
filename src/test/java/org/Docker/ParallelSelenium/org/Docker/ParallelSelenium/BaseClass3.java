@@ -39,7 +39,7 @@ public class BaseClass3 {
 		driver.navigate().to("https://www.google.com");
 		File screenshot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(screenshot, new File(".\\screenshot1.jpg"));
-		//System.out.println(SeleniumManager.getInstance().getDriverPath("chromedriver"));
+		System.out.println(SeleniumManager.getInstance().getDriverPath("chromedriver"));
 	}
 
 }
