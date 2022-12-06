@@ -9,7 +9,7 @@ pipeline {
 
     stage('Docker start') {
       steps {
-        bat 'docker-compose -f docker-compose.yml start'
+        
          bat 'docker-compose -f docker-compose.yml up'
       }
     }
