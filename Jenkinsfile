@@ -9,8 +9,8 @@ pipeline {
 
     stage('Docker start') {
       steps {
-        bat 'docker-compose start'
-         bat 'docker-compose up'
+        bat 'docker-compose -f docker-compose.yml start'
+         bat 'docker-compose -f docker-compose.yml up'
       }
     }
 
@@ -27,8 +27,8 @@ pipeline {
     }
     stage('Docker end') {
       steps {
-               bat 'docker-compose down'
-         bat 'docker-compose stop'
+               bat 'docker-compose -f docker-compose.yml down'
+         bat 'docker-compose -f docker-compose.yml stop'
       }
     }
 
