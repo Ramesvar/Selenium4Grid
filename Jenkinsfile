@@ -37,6 +37,11 @@ pipeline {
     maven 'maven'
     jdk 'JAVA'
   }
+  post { 
+        always { 
+            cleanWs()
+        }
+    }
   options {
     buildDiscarder(logRotator(daysToKeepStr: '1', numToKeepStr: '5'))
   }
